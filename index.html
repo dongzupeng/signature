@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .canvas-container {
+        position: relative;
+    }
+
+    .canvas-container canvas {
+        display: block;
+        border: 1px solid #d0d0d0;
+        border-radius: 4px;
+    }
+
+    .controls {
+        margin-top: 10px;
+    }
+    button {
+        border: none;
+        background-color: #d0d0d0;
+        padding: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电子签</title>
+</head>
+
+<body>
+    <div class="canvas-container">
+        <canvas id="signatureCanvas" width="600" height="400"></canvas>
+    </div>
+    <div class="controls">
+        <button id="clearButton">Clear</button>
+        <button id="saveButton">Save</button>
+    </div>
+    <script src="./signature.js"></script>
+</body>
+
+</html>
